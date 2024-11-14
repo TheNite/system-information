@@ -58,7 +58,8 @@ def pretty_print_system_info(info):
     cpu_info = info["CPU"]
     output.append("CPU Information:")
     output.append(f"  Processor: {cpu_info['Processor']}")
-    output.append(f"  Cores: {cpu_info['Cores']} | Threads: {cpu_info['Threads']}\n")
+    output.append(f"  Cores: {cpu_info['Cores']} | Threads: {cpu_info['Threads']}")
+    output.append(f"  Total RAM: {get_size(psutil.virtual_memory().total)}\n")
 
     motherboard_info = info["Motherboard"]
     output.append("Motherboard Information:")
