@@ -15,6 +15,9 @@ This application provides detailed system information through a graphical user i
   - Custom module: `system_info` (contains the function `fetch_system_info()`)
 - HTML file for GUI: The app requires an HTML file named `index.html` located in the `gui` directory.
 
+## Screenshot
+![System Information GUI](screenshots/screenshot.png)
+
 ## Installation
 
 To install the required Python modules, you can use `pip` with the provided `requirements.txt`:
