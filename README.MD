@@ -53,16 +53,3 @@ The app will create a log directory named `system_info_logs` in the current dire
 - Logs are stored in the directory: `./system_info_logs`
 - Log rotation ensures that logs do not exceed a manageable size. Each log file is limited to 1MB, with up to 3 backup log files maintained.
 
-## Troubleshooting
-
-- **Log Location**: Check the `system_info_logs` folder for detailed logs to troubleshoot any issues.
-- **GUI Issues**: If the GUI does not start, ensure that the HTML file `index.html` is in the correct path under the `gui` directory.
-- **Recursion Issue**: If you see an error about recursion, the environment variable `PYWEBVIEW_STARTED` might not be set correctly. Ensure that the application is not being re-launched multiple times.
-
-## Notes
-
-- **Multi-processing Support**: The script includes multi-processing support using `multiprocessing.freeze_support()`. This ensures compatibility when creating standalone executables with tools like `PyInstaller`.
-- **Executable Creation**: To create an executable using `PyInstaller`, make sure to handle the `get_resource_path` function properly, ensuring all resources are bundled correctly.
-
-##
-
