@@ -1,0 +1,6 @@
+psutil
+setuptools
+GPUtil
+tabulate
+winreg
+pyperclip
